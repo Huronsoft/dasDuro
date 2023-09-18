@@ -3,12 +3,12 @@ import Scroll_num from "./Sroll_num";
 
 export default function Esquema_rbasic ({arrayseleccion}){ 
 return (
-  <div className=" flex w-full h-full bg-[url('/boletas_img/fondos/boder2.png')]">
+  <div className=" flex w-full h-full">
     
      <header className=" flex flex-col w-full h-full justify-center items-center  ">
 
           {/* contenedor imagagen y panel pago  opacity-90*/}
-          <div className=" flex flex-row w-9/12  h-5/6  p-3  bg-[rgb(18,2,62)] shadow-xl ">
+          <div className=" flex flex-row w-5/6  h-5/6  p-3  bg-[rgb(18,2,62)] shadow-xl ">
           
           <div className="flex flex-row w-1/2 h-full  pr-2 gap-3">
        
@@ -68,11 +68,11 @@ return (
           </div>
           </div>
             {/* contenedor  pago*/}
-          <div className=" flex flex-col w-full h-full rounded-xl  bg-[rgb(18,2,62)]  p-2 gap-4 relative">
+          <div className=" flex flex-col w-full h-full rounded-xl  bg-[rgb(18,2,62)]  p-5 gap-4">
            
                 <div className="flex flex-col w-full h-auto gap-5">
                   <p className="flex w-full h-auto text-lg text-amber-600 font-bold ">
-                    Entra ya para obtener una oportunidad de ganar
+                    
                   </p>
                   <p className="flex w-full h-auto text-5xl text-white font-bold ">
                     Combo de Exploradoras y Maletero
@@ -103,8 +103,8 @@ return (
                     </p>
                 </div>
                 {/* barra */}
-                <div className=" flex flex-row w-full h-2 rounded-2xl bg-[rgb(32,14,84)]  shadow-sm shadow-[rgb(236,102,36)] ">
-                    <div className=" flex flex-row w-1/2  h-2 rounded-2xl bg-[rgb(236,102,36)] shadow-sm shadow-[rgb(236,102,36)] ">
+                <div className=" flex flex-row w-full h-2 rounded-2xl bg-[rgb(32,14,84)]  shadow-sm shadow-lime-300 ">
+                    <div className=" flex flex-row w-1/2  h-2 rounded-2xl bg-green-400 shadow-sm shadow-lime-300  ">
 
                     </div> 
                 </div>
@@ -125,22 +125,28 @@ return (
                   </p>
                 </div>
 
+                              
+
                  {/* este viene del contenedor  cargueboletas  */}
                 <div className=" flex flex-row items-center w-full h-full gap-2">
-                
-                <div className="w-full grid grid-cols-5 gap-1 overflow-auto">
-                   { arrayseleccion.map(value=>
-                 <div className=" h-auto w-8 rounded-full bg-sky-500 text-white font-bold p-1">
-                 <p>{value}</p>      
-                   </div>
-                  )
-                 }
-                </div>
+                                  
+                      <div className="w-full grid grid-cols-5 gap-1 items-center justify-center  overflow-auto">
+                        { arrayseleccion.map(value=>
+                      <div className=" h-auto w-8 rounded-full bg-sky-500 text-white  items-center justify-items-center font-bold p-1">
+                      <p>{value}</p>      
+                        </div>
+                        )
+                      }
+                      </div>
 
                 </div>
+
+                <div className="flex flex-row w-full h-48 items-center  justify-center gap-5">
+
+                 </div>   
 
              {/* este viene de componentes scroll_num  */}
-             <div className="flex flex-row w-full h-full items-center  justify-center p- gap-5">
+             <div className="flex flex-row w-full h-full items-center  justify-center gap-5">
 
                <button className="flex text-xl w-56 h-16 font-bold items-center text-white 
                     bg-gradient-to-r from-indigo-500  to-cyan-400

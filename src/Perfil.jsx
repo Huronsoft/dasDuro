@@ -1,9 +1,9 @@
-import Reg_log_form from "./formularios/Reg_log_form";
+import form_perfil from "./formularios/Form_perfil" 
 
 export default function Perfil(){ 
 return (
  <div className="flex flex_col w-full overflow-hidden justify-center items-center">
-  <Reg_log_form/>
+  <form_perfil/>
  </div>
 )
 }

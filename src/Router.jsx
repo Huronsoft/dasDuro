@@ -1,18 +1,17 @@
 import {createBrowserRouter} from 'react-router-dom'
 import App from './App'
-import Rifa from './Rifa'
 import Das from './Das'
 import Clientes from './Clientes'
 import Conf from './config_money/Conf'
-import Contacto from './Contacto'
 import Estadistica from './Estadisticas'
-import Perfil from './Perfil'
 import Home from './Home'
 import Pro_rifa from './Pro_rifa'
-import Scroll_num from './compent/Sroll_num'
 import Basic_rnew from './Basic_rnew'
-
-
+import Login_form from './formularios/Login_form'
+import Form_registro from './formularios/Form_registro'
+import Form_check from './formularios/Form_check'
+import Form_rifas from './formularios/Form_rifas'
+import Rifa from './Rifa'
  const router = createBrowserRouter(
     [    
         {
@@ -24,7 +23,7 @@ import Basic_rnew from './Basic_rnew'
                       },
                       {
                         path:'/Perfil',
-                        element:<Perfil/>
+                        element:<Form_registro/>
                       },          
                       {
                           path:'/rifas',
@@ -48,7 +47,7 @@ import Basic_rnew from './Basic_rnew'
                       },
                       {
                         path:'/contactanos',
-                        element:<Contacto/>
+                        element:<Clientes/>
                       },            
              ],        
         }, 
@@ -62,8 +61,21 @@ import Basic_rnew from './Basic_rnew'
         },
         {
           path:'/comp',
-          element: <Scroll_num/>
+          element: <Login_form/>
+        },
+        {
+          path:'/registro',
+          element: <Form_registro/>
+        },
+        {
+          path:'/check',
+          element: <Form_check/>
+        },
+        {
+          path:'/frifa',
+          element: <Form_rifas/>
         }
+        
     ]
 
  )

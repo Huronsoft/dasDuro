@@ -52,6 +52,23 @@ return (
               <p>Pro-rifa</p>
               </Link>
 
+              <Link to="/comp" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 
+             text-sm font-medium"
+             >
+              <p>Pruebas</p>
+              </Link>
+
+              <Link to="/check" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 
+             text-sm font-medium"
+             >
+              <p>Check_pago</p>
+              </Link>
+
+              <Link to="/frifa" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 
+             text-sm font-medium"
+             >
+              <p>Formulario rifas</p>
+              </Link>
 
             </div>
    </div>
