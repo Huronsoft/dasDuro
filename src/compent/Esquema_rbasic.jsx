@@ -5,15 +5,15 @@ export default function Esquema_rbasic ({arrayseleccion}){
 return (
   <div className=" flex w-full h-full">
     
-     <header className=" flex flex-col w-full h-full justify-center items-center  ">
+     <header className=" flex flex-col w-full h-full  md:flex-row justify-center items-center  ">
 
           {/* contenedor imagagen y panel pago  opacity-90*/}
-          <div className=" flex flex-row w-5/6  h-5/6  p-3  bg-[rgb(18,2,62)] shadow-xl ">
+          <div className=" flex flex-row w-5/6  h-5/6   p-3  bg-[rgb(18,2,62)] shadow-xl ">
           
           <div className="flex flex-row w-1/2 h-full  pr-2 gap-3">
        
          {/* contenedor imagen y carrusel*/}
-           <div className="flex flex-col  gap-2 w-full h-full">
+           <div className="flex flex-col   gap-2 w-full h-full">
              {/* contenedor imagen  prncipal*/}
             <div className=" flex flex-col w-full h-full rounded-lg bg-[rgb(90,75,204)]   ">
                      <img className="cover rounded-xl w-full h-full object-cover " src="/boletas_img/basic/bas_1.jpg" alt="" />

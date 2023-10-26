@@ -12,6 +12,7 @@ import Form_registro from './formularios/Form_registro'
 import Form_check from './formularios/Form_check'
 import Form_rifas from './formularios/Form_rifas'
 import Rifa from './Rifa'
+import Landing from './Landing'
  const router = createBrowserRouter(
     [    
         {
@@ -62,6 +63,10 @@ import Rifa from './Rifa'
         {
           path:'/comp',
           element: <Login_form/>
+        },
+        {
+          path:'/land',
+          element: <Landing/>
         },
         {
           path:'/registro',
